@@ -1,0 +1,40 @@
+@use '../../../../sass/variables';
+
+.header{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0 1.25rem;
+  &--notifications{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__title{
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &__number{
+      background-color: variables.$blue;
+      color: variables.$white;
+      padding: 0.125rem 0.4375rem;
+      border-radius: 0.3125rem;
+    }
+  }
+
+  &--button{
+    background: transparent;
+    font-size: 0.8rem;
+    border: 0;
+    padding: 0;
+    color: variables.$grayish-blue;
+    font-weight: bold;
+
+    &:hover{
+      color: variables.$blue;
+    }
+  }
+}

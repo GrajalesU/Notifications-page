@@ -1,0 +1,99 @@
+@use '../../sass/variables';
+
+
+.notification{
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.625rem 0.75rem;
+  margin: 0.625rem 0.9375rem;
+  background-color: variables.$white;
+  border-radius: 0.625rem;
+  &--profileImage{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--description{
+    margin-left: 0.625rem;
+    &__name{
+      display: inline;
+      font-size: 14.4px;
+      font-weight: bold;
+      margin-right: 0.1875rem;
+
+      &:hover{
+        color:variables.$blue;
+        cursor: pointer;
+      }
+    }
+
+    &__info{
+      display: inline;
+      font-size: 0.9rem;
+
+      >strong:hover{
+        color:variables.$blue;
+        cursor: pointer;
+      }
+
+      > strong >a{
+        text-decoration: none;
+        color: variables.$blue;
+        font-weight: bold;
+      }
+    }
+
+    &__time{
+      display: block;
+      margin-top: 0.3125rem;
+      color: variables.$grayish-blue;
+    }
+  }
+}
+
+.new{
+  background-color: variables.$very-light-grayish-blue;
+}
+
+.redDot{
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: variables.$red;
+  border-radius: 100%;
+  margin-left: 0.625rem;
+}
+
+
+.message{
+  border: 1px solid variables.$light-grayish-blue-2;
+  border-radius: 10px;
+  padding: 0 1.5625rem;
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: variables.$dark-grayish-blue;
+
+  &:hover{
+    background-color:variables.$light-grayish-blue-1;
+    cursor: pointer;
+  }
+}
+
+.picture{
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-left: 2.5rem;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+
+  & img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover{
+    border-radius: 10px;
+    border-color: variables.$light-grayish-blue-1;
+    cursor: pointer;
+  }
+}

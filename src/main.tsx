@@ -1,3 +1,4 @@
+import 'normalize.css';
 import './sass/index.scss';
 
 import React from 'react';
