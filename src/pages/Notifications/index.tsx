@@ -1,5 +1,7 @@
 import './styles.scss';
 
+import { useState } from 'react';
+
 import angelaImage from '../../assets/images/avatar-angela-gray.webp';
 import annaImage from '../../assets/images/avatar-anna-kim.webp';
 import jacobImage from '../../assets/images/avatar-jacob-thompson.webp';
@@ -16,24 +18,25 @@ import MessageNotification from './components/Notification/MessageNotification';
 import ReactionNotification from './components/Notification/ReactionNotification';
 
 const Notifications = () => {
+  const [read, setRead] = useState(false);
   return (
     <div className="container">
-      <Header />
+      <Header setRead={setRead} />
       <ReactionNotification
-        isNew={true}
+        isNew={!read}
         imgSrc={markImage}
         user="Mark Webber"
         post="My first tournament today!"
         time="1m ago"
       />
       <FollowNotification
-        isNew={true}
+        isNew={!read}
         imgSrc={angelaImage}
         user="Angela Gray"
         time="5m ago"
       />
       <GroupNotification
-        isNew={true}
+        isNew={!read}
         imgSrc={jacobImage}
         user="Jacob Thompson"
         time="1 day ago"
