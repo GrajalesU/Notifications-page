@@ -1,3 +1,5 @@
+@use './variables';
+
 @font-face {
   font-family: 'Plus Jakarta Sans';
   src: url('../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
@@ -9,4 +11,11 @@
 body{
   margin: 0;
   padding: 0;
+}
+
+.background{
+  background-color: variables.$very-light-grayish-blue;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }

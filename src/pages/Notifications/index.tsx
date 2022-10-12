@@ -11,7 +11,7 @@ import chessImage from '../../assets/images/image-chess.webp';
 import Header from './components/Header';
 const Notifications = () => {
   return (
-    <div>
+    <div className="container">
       <Header />
       <div className="notification new">
         <img src={markImage} alt="$name profile" className="notification--profileImage" />
