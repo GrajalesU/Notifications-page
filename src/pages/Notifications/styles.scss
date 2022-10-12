@@ -85,6 +85,7 @@
   margin-left: 2.5rem;
   box-sizing: border-box;
   border: 3px solid transparent;
+  justify-self: flex-end;
 
   & img{
     width: 100%;
@@ -100,7 +101,7 @@
 
 .container{
   background: variables.$white;
-  max-width: 560px;
+  max-width: 580px;
   margin: 0 auto;
   box-shadow: 0px 0px 65px -27px rgba(0,0,0,0.75);
 
